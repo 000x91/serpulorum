@@ -1,0 +1,66 @@
+accessible: true
+allowLaunchLoadout: true
+allowLaunchSchematics: true
+allowSectorInvasion: true
+allowWaves: true
+allowWaveSimulation: true
+alwaysUnlocked: true
+atmosphereColor: 132241
+atmosphereRadIn: 0.05
+atmosphereRadOut: 0.5
+bloom: false
+camRadius: 0.4
+clearSectorOnLose: false
+defaultCore: core-shard
+drawOrbit: true
+
+generator:{
+alt: false
+baseseed: 1222
+berylChance:0.20
+carbonChance:0.20
+ferricChance:0.20
+iceChance:0.12
+min:120
+max:978
+octaves: 1
+radMax: 620
+radMin: 225
+persistance:0.9
+scl:4.52
+seed:3123
+type:SerpuloPlanetGenerator
+waterOffset:0.01
+}
+
+hasAtmosphere: true
+hiddenItems:[]
+iconColor: 989801
+launchCandidates: []
+localizedName: serpulr
+
+mesh: {
+  type: NoiseMesh
+  planet: serpulr
+  seed: 1233
+  divisions: 6
+  color1: 980981
+  color2: 480811
+  radius: 1.91
+  octaves: 3
+  persistence: 0.38
+  scale: 1
+  mag: 1.5
+}
+
+minZoom: 0.17
+orbitRadius: 128
+orbitSpacing: 140
+parent: sun
+radius: 2.21
+solarSystem: sun
+sectorSeed: 5
+startSector: 0
+sectorSize: 4
+updateLighting: false
+visible: true
