@@ -1,0 +1,8 @@
+author: Chin Hon Nang
+displayName: serpul_clones
+dependencies:[]
+description: serpulo clones. Trying to change how they are generated. It shows that the planet size will affect the map size. No technology provided. It is recommended that you play the original serpulo campaign first. In furure, code extension may be used.  
+hidden:false
+name: serpul_clones
+minGameVersion: 140
+version: build 0
