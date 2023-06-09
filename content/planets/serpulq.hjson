@@ -11,6 +11,7 @@ atmosphereRadOut: 0.5
 bloom: false
 camRadius: 0.4
 clearSectorOnLose: false
+cloudMesh:{}
 defaultCore: core-shard
 drawOrbit: true
 
