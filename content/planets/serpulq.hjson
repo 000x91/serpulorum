@@ -11,7 +11,7 @@ atmosphereRadOut: 0.5
 bloom: false
 camRadius: 0.4
 clearSectorOnLose: false
-cloudMesh:{"color":543421,"divisions":5,"seed":1331,"radius":0.52,"speed":1.6,"type":"HexSkyMesh"}
+cloudMesh:{"color":543421,"divisions":5,"seed":1331,"radius":0.05,"speed":1.6,"type":"HexSkyMesh"}
 defaultCore: core-shard
 drawOrbit: true
 
