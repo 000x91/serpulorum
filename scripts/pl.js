@@ -11,7 +11,7 @@ Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-serpulv").generator = new SerpuloPlanetGenerator();; // that does not work. 
 });
 
-function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
-function altered_spg_waterOffset(a){var b = extend(SerpuloPlanetGenerator,{waterOffset = a;}); return b;}
-var genLakes_true = extend(SerpuloPlanetGenerator,{genLakes = true});
-var unlock_all_sectors_all_low = extend(SerpuloPlanetGenerator,{allowLanding(s){return true}}); //unlock all sectors and turn all low.
+//function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
+//function altered_spg_waterOffset(a){var b = extend(SerpuloPlanetGenerator,{waterOffset = a;}); return b;}
+//var genLakes_true = extend(SerpuloPlanetGenerator,{genLakes = true});
+//var unlock_all_sectors_all_low = extend(SerpuloPlanetGenerator,{allowLanding(s){return true}}); //unlock all sectors and turn all low.
