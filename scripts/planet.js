@@ -10,3 +10,4 @@ Events.on(ContentInitEvent, e => {
 });
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
+var empty_extension = extend(SerpuloPlanetGenerator,{});
