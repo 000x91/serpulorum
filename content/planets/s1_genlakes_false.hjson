@@ -1,0 +1,66 @@
+accessible: true
+allowLaunchLoadout: true
+allowLaunchSchematics: true
+allowSectorInvasion: true
+allowWaves: true
+allowWaveSimulation: true
+alwaysUnlocked: true
+atmosphereColor: a92821
+atmosphereRadIn: 0.05
+atmosphereRadOut: 0.5
+bloom: false
+camRadius: 0.4
+clearSectorOnLose: false
+defaultCore: core-shard
+drawOrbit: true
+
+generator:{
+alt: false
+baseseed: 999
+berylChance:0.20
+carbonChance:0.20
+ferricChance:0.20
+iceChance:0.12
+min:120
+max:978
+octaves: 1
+radMax: 620
+radMin: 225
+persistance:0.9
+scl:4.52
+seed:3132
+type:SerpuloPlanetGenerator
+waterOffset:0.00
+}
+
+hasAtmosphere: true
+hiddenItems:[]
+iconColor: 840323
+launchCandidates: []
+localizedName: "s1 genLakes= false"
+
+mesh: {
+  type: NoiseMesh
+  planet: s1_genlakes_false
+  seed: 531
+  divisions: 6
+  color1: 878387
+  color2: 898838
+  radius: 4.91
+  octaves: 3
+  persistence: 0.15
+  scale: 0.4
+  mag: 0.5
+}
+
+minZoom: 0.17
+orbitRadius: 158
+orbitSpacing: 140
+parent: sun
+radius: 5.31
+solarSystem: sun
+sectorSeed: 1
+startSector: 0
+sectorSize: 4
+updateLighting: false
+visible: true
