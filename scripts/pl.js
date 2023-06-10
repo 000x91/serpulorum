@@ -1,7 +1,7 @@
 // Change the planet generator
 // Using ErekirPlanetGenerator prevents people to generate random sectors
 Events.on(ContentInitEvent, e => {
-    Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases;
+    //Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases; //currently somer errors 
     Vars.content.planet("serpul_clones-s1_r5.67").generator = new SerpuloPlanetGenerator();
     Vars.content.planet("serpul_clones-s1_r9.99").generator = new SerpuloPlanetGenerator(); //same seed different sizes will make the maps different
     Vars.content.planet("serpul_clones-serpulq").generator = new SerpuloPlanetGenerator();
