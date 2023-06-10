@@ -2,6 +2,7 @@
 // Using ErekirPlanetGenerator prevents people to generate random sectors
 Events.on(ContentInitEvent, e => {
     Vars.content.planet("setpul_clones-s1_genlakes_false").generator = new SerpuloPlanetGenerator();
+    Vars.content.planet("setpul_clones-s1_genlakes_true").generator = genLakes_true;
     Vars.content.planet("serpul_clones-serpulq").generator = new SerpuloPlanetGenerator();
     Vars.content.planet("serpul_clones-serpulr").generator = new SerpuloPlanetGenerator();
     Vars.content.planet("serpul_clones-serpuls").generator = new SerpuloPlanetGenerator();
