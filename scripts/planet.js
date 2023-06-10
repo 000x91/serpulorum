@@ -6,7 +6,7 @@ Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-serpuls").generator = new SerpuloPlanetGenerator();
     Vars.content.planet("serpul_clones-serpult").generator = new SerpuloPlanetGenerator();
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();
-    Vars.content.planet("serpul_clones-serpulv").generator = empty_extension;
+    Vars.content.planet("serpul_clones-serpulv").generator = new SerpuloPlanetGenerator(); //empty_extension; //currently not working
 
 });
 
