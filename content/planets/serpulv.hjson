@@ -11,6 +11,7 @@ atmosphereRadOut: 0.5
 bloom: false
 camRadius: 0.4
 clearSectorOnLose: false
+cloudMesh{}
 defaultCore: core-shard
 drawOrbit: true
 
@@ -59,7 +60,7 @@ orbitSpacing: 140
 parent: sun
 radius: 5.31
 solarSystem: sun
-sectorSeed: 51
+sectorSeed: 6788
 startSector: 0
 sectorSize: 4
 updateLighting: false
