@@ -12,5 +12,5 @@ Events.on(ContentInitEvent, e => {
 });
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
-//var genLakes_true = extend(SerpuloPlanetGenerator,{genLakes = true});
+var genLakes_true = extend(SerpuloPlanetGenerator,{genLakes = true});
 //var unlock_all_sectors_all_low = extend(SerpuloPlanetGenerator,{allowLanding(s){return true}}); //unlock all sectors and turn all low.
