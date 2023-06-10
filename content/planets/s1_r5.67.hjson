@@ -38,11 +38,10 @@ hasAtmosphere: true
 hiddenItems:[]
 iconColor: 840323
 launchCandidates: []
-localizedName: "s1 genLakes= false"
+localizedName: "s1_r5.67"
 
 mesh: {
   type: NoiseMesh
-  planet: s1_genlakes_false
   seed: 531
   divisions: 6
   color1: 878387
