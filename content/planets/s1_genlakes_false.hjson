@@ -5,12 +5,13 @@ allowSectorInvasion: true
 allowWaves: true
 allowWaveSimulation: true
 alwaysUnlocked: true
-atmosphereColor: a92821
+atmosphereColor: abcdbe
 atmosphereRadIn: 0.05
 atmosphereRadOut: 0.5
 bloom: false
 camRadius: 0.4
 clearSectorOnLose: false
+cloudMesh:{"color":124320,"divisions":5,"octaves":2,"radius":0.13,"seed":324,"type":HexSkyMesh}
 defaultCore: core-shard
 drawOrbit: true
 
