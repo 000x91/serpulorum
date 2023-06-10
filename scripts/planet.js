@@ -6,7 +6,7 @@ Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-serpuls").generator = new SerpuloPlanetGenerator();
     Vars.content.planet("serpul_clones-serpult").generator = new SerpuloPlanetGenerator();
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();
-    Vars.content.planet("serpul_clones-serpulv").generator = unlock_all_sectors_all_low; //all sectors in this planet are unlocked. 
+    Vars.content.planet("serpul_clones-serpulv").generator = unlock_all_sectors_all_low; // that does not work. 
 
 });
 
