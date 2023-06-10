@@ -3,5 +3,10 @@ A Mindustry mod that have provides no buildigs,no materials and no missions but 
 serpulo clones. No techs provided. It is recommended that you play the original campaign first. 
 
 A prject to test if I can alter the generator for this planet via java scrips  
-
 planet generator are altered by javascript. 
+============================================================================================
+credits for source codes: 
+Frozen Farlands https://github.com/ZielonyTrojkat/Frozen-Farlands for sucessfully changing the planetGenerator. 
+Zerg https://github.com/430230562/zerg for code extension and overriding the stuffs. 
+
+
