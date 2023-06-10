@@ -11,7 +11,7 @@ atmosphereRadOut: 0.5
 bloom: false
 camRadius: 0.4
 clearSectorOnLose: false
-cloudMesh:{}
+cloudMesh:{"type":"HexSkyMesh"}
 defaultCore: core-shard
 drawOrbit: true
 
@@ -54,7 +54,7 @@ mesh: {
 }
 
 minZoom: 0.17
-orbitRadius: 128
+orbitRadius: 108
 orbitSpacing: 140
 parent: sun
 radius: 4.50
