@@ -12,4 +12,4 @@ Zerg https://github.com/430230562/zerg for code extension and overriding the stu
 conclusion:
 1. Increase planet size increases the map sixe. 
 2. public functions can be overrided. 
-3. trying to override private function results the script to be discarded altogether. 
+3. cannot override the use of protected variables via public functions.  
