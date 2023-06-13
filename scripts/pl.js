@@ -140,11 +140,11 @@ function get_ars(a,b)
     }
     else if(c == 8){
         if(d==0){return Blocks.darkSandWater;}
-        else if(d== 1){return Block.darksand;}
+        else if(d== 1){return Blocks.darksand;}
         
-        else if(d== 3){return Block.tar;}
-        else if(d== 4){return Block.moss;}
-        else if(d== 5){return Block.sporeMoss;}
+        else if(d== 3){return Blocks.tar;}
+        else if(d== 4){return Blocks.moss;}
+        else if(d== 5){return Blocks.sporeMoss;}
         else if(d== 6){return Blocks.snow;}
         else if(d== 7){return Blocks.basalt;}
         else if(d== 8){return Blocks.basalt;}
