@@ -12,8 +12,8 @@ function get_block(po)
 {
     var hyt = rawhyt(po);
     Tmp.v31.set(po);
-    //var pos = Tmp.v33.set(pos).scl(5);
-    //var rad = 5; //var tars; 
+    var pos = Tmp.v33.set(pos).scl(5);
+    var rad = 5; //var tars; 
     //var tem = Mathf.clamp(Math.abs(pos.y * 2) / (rad));
     //var tnoise = Simplex.noise3d(1, 7, 0.56, 0.33, pos.x, pos.y + 999, pos.z);
     //var temp = Mathf.lerp(tem, tnoise, 0.5);
