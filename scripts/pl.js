@@ -15,19 +15,88 @@ function get_ars(a,b)
     var c = Math.floor(a); var d = Math.floor(b); 
     if(c < 0 || d < 0){return Blocks.coreZone;}
     else if(c >11 || d > 11){return Blocks.coreZone;}
-    //if(c == 0){return ars_00[d];}
-    //else if(c == 1){return ars_01[d];}
-    //else if(c == 2){return ars_02[d];}
-    //else if(c == 3){return ars_03[d];}
-    //else if(c == 4){return ars_04[d];}
-    //else if(c == 5){return ars_05[d];}
-    //else if(c == 6){return ars_06[d];}
-    //else if(c == 7){return ars_07[d];}
-    //else if(c == 8){return ars_08[d];}
-    //else if(c == 9){return ars_09[d];}
-    //else if(c == 10){return ars_10[d];}
-    //else if(c == 11){return ars_11[d];}
-    //else if(c == 12){return ars_12[d];}
+    if(c==0){
+        if(d == 0){return Blocks.water;}
+        else if(d == 1){return Blocks.darksandWater;}
+        else if(d == 2){return Blocks.darksand;}
+        else if(d == 3){return Blocks.coreZone;}
+        else if(d == 4){return Blocks.hotrock;}
+        else if(d == 5){return Blocks.magmarock;}
+        else if(d == 6){return Blocks.slag;}
+        else if(d == 7){return Blocks.magmarock;}
+        else if(d == 8){return Blocks.hotrock;}
+        else if(d == 9){return Blocks.stone;}
+        else if(d == 10){return Blocks.tar;}
+        else if(d == 11){return Blocks.stone;}
+        else if(d == 12){return Blocks.darksandTaintedWater;}
+    }
+    else if(c==1){
+        if(d==0){return Blocks.water;}
+        else if(d == 1){return Blocks.darksandWater;}
+        else if(d == 2){return Blocks.darksand;}
+        else if(d == 3){return Blocks.coreZone;}
+        else if(d == 4){return Blocks.sand;}
+        else if(d == 5){return Blocks.sand;}
+        else if(d == 6){return Blocks.tar;}
+        else if(d == 7){return Blocks.sand;}
+        else if(d == 8){return Blocks.sand;}
+    }
+    else if(c==2)
+    {
+        if(d==0){return Blocks.water;}
+        else if(d == 1){return Blocks.darksandWater;}
+        else if(d == 2){return Blocks.darksand;}
+    }
+    else if(c == 3)
+    {
+        if(d==0){return Blocks.water;}
+        else if(d == 1){return Blocks.sandWater;}
+        else if(d == 2){return Blocks.sand;}
+        else if(d == 3){return Blocks.salt;}
+    }
+    else if(c == 4)
+    {
+        if(d==0){return Blocks.deepwater;}
+        else if(d== 1){return Blocks.water;}
+        else if(d== 2){return Blocks.sandWater;}
+        else if(d== 2){return Blocks.sand;}
+    }
+    else if(c == 5)
+    {
+        if(d==0){return Blocks.deepwater;}
+        else if(d== 1){return Blocks.water;}
+        else if(d== 2){return Blocks.sandWater;}
+        else if(d== 3){return Blocks.sand;}
+    }
+    else if(c == 6)
+    {
+        if(d==0){return Blocks.deepwater;}
+        else if(d== 1){return Blocks.sandWater;}
+        else if(d== 2){return Blocks.sand;}
+    }
+    else if(c == 7){
+        if(d==0){return Blocks.deepTaintedWater;}
+        else if(d==1){return Blocks.darksandTaintedWater;}
+        else if(d==2){return Blocsk.darksand;}
+        
+    }
+    else if(c == 8){
+        if(d==0){return Blocks.darkSandWater;}
+        else if(d==1){return Block.darksand;}
+    }
+    else if(c == 9){
+        if(d==0){return Blocks.darkSandWater;}
+        else if(d==1){return Block.darksand;}
+    }
+    else if(c ==10){
+        if(d==0){return Blocks.deepTaintedWater;}
+    }
+    else if(c ==11){
+        if(d==0){return Blocks.taintedWater;}
+    }
+    else if(c ==12){
+        if(d==0){return Blocks.darkSandWater;}
+    }
     return Blocks.coreZone; 
 }
 function get_block(po) //function 1b
