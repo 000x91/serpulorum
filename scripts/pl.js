@@ -11,12 +11,18 @@ function get_block(po)
 {
     
 }
-function rawhyt(po){return (Mathf.pow(Simplex.noise3d(seed, 7, 0.5, 0.33, po.x, po.y, po.z), 2.3) + 0.07) / 1.07;}
+function rawhyt(po){var pos = Tmp.v33.set(po).scl(5); return (Mathf.pow(Simplex.noise3d(seed, 7, 0.5, 0.33, pos.x, pos.y, pos.z), 2.3) + 0.07) / 1.07;}
 
 var all_enemy_bases = extend(SerpuloPlanetGenerator,{generateSector(sect){sect.generateEnemyBase=true;}});
 var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(po,ti)
 {
+     ti.floor = getBlock(po);
+     Tmp.v31.set(po);
 }});
 //var genLakes_true = extend(SerpuloPlanetGenerator,{{genLakes = true}}); // causes js to stop working altogether. 
-var def_waterOffset = 0.07; 
+
+//default private offset values. 
+var def_waterOffset = 0.07; var def_scl = 5;
+
+// 
 var unlock_all_sectors_all_low = extend(SerpuloPlanetGenerator,{allowLanding(s){return true}}); //unlock all sectors and turn all low.
