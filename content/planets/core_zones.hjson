@@ -37,7 +37,7 @@ hasAtmosphere: true
 hiddenItems:[]
 iconColor: 454a6f
 launchCandidates: []
-localizedName:"core zones (wip)"
+localizedName:"core zones added"
 
 mesh: {
   type: NoiseMesh
