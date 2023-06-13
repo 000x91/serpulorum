@@ -1,5 +1,6 @@
 // Change the planet generator
-// Using ErekirPlanetGenerator prevents people to generate random sectors
+// Using ErekirPlanetGenerator prevents people to generate random sectors. No that actually fails to do so. just that the planet has no enemies but may be in future. 
+// Attempt to use altered SerpuloPlanetGenerator. 
 Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases; //currently does not work. 
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();
@@ -8,31 +9,31 @@ Events.on(ContentInitEvent, e => {
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
 
-function get_block(po)
+function get_block(po) //function 1b
 {
-    var hyt = rawhyt(po);
+    var hyt = rawhyt(po); //function 1c
     Tmp.v31.set(po);
     var pos = Tmp.v33.set(pos).scl(5);
     var rad = 5; //var tars; 
     var tem = Mathf.clamp(Math.abs(pos.y * 2) / (rad));
     var tnoise = Simplex.noise3d(1, 7, 0.56, 0.33, pos.x, pos.y + 999, pos.z);
     var temp = Mathf.lerp(tem, tnoise, 0.5);
-    //hyt = *=1.2; hyt = Math.clamp(hyt);
+    hyt = *=1.2; hyt = Math.clamp(hyt);
     //var tar = Simplex.noise3d(1, 4, 0.55, 0.5, pos.x, pos.y + 999, pos.z) * 0.3 + Tmp.v31.dst(0, 0, 1) * 0.2;
     //var res = ars[Mathf.clamp(temp * ars.length), 0, ars[0].length - 1)][Mathf.clamp(height * ars[0].length), 0, ars[0].length - 1)];
     //return res; 
 }
 
-function rawhyt(po)
+function rawhyt(po) //function 1c
 {
     var pos = Tmp.v33.set(po).scl(5); 
     return (Mathf.pow(Simplex.noise3d(seed, 7, 0.5, 0.33, pos.x, pos.y, pos.z), 2.3) + 0.07) / 1.07;
 }
 
 var all_enemy_bases = extend(SerpuloPlanetGenerator,{generateSector(sect){sect.generateEnemyBase=true;}});
-var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(po,ti)
+var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(po,ti) //function 1a
 {
-     ti.floor = get_block(po);
+     ti.floor = get_block(po); //function 1b
      ti.block = ti.floor.asFloor().wall;
      if(Ridged.noise3d(1, po.x, po.y, po.z, 2, 22) > 0.31){ti.block = Blocks.air;}
 }});
