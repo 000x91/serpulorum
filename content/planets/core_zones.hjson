@@ -1,0 +1,65 @@
+accessible: true
+allowLaunchLoadout: true
+allowLaunchSchematics: true
+allowSectorInvasion: true
+allowWaves: true
+allowWaveSimulation: true
+alwaysUnlocked: true
+atmosphereColor: a94232
+atmosphereRadIn: 0.05
+atmosphereRadOut: 0.5
+bloom: false
+camRadius: 0.4
+clearSectorOnLose: false
+defaultCore: core-shard
+drawOrbit: true
+
+generator:{
+alt: false
+baseseed: 1222
+berylChance:0.20
+carbonChance:0.20
+ferricChance:0.20
+iceChance:0.12
+min:120
+max:978
+octaves: 1
+radMax: 620
+radMin: 225
+persistance:0.9
+scl:4.52
+seed:3123
+type:SerpuloPlanetGenerator
+waterOffset:0.01
+}
+
+hasAtmosphere: true
+hiddenItems:[]
+iconColor: 454a6f
+launchCandidates: []
+localizedName:"core zones (wip)"
+
+mesh: {
+  type: NoiseMesh
+  seed: 7869
+  divisions: 6
+  color1: 054243
+  color2: 403212
+  radius: 4.31
+  octaves: 3
+  persistence: 0.865
+  scale: 1
+  mag: 1.5
+}
+
+minZoom: 0.17
+orbitRadius: 72
+orbitSpacing: 140
+parent: sun
+radius: 4.50
+solarSystem: sun
+sectorSeed: 8798
+startSector: 0
+sectorSize: 4
+updateLighting: false
+visible: true
