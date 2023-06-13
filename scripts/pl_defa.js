@@ -1,3 +1,4 @@
+// this script is seperated form main because no errors is found here and this is SerpuloPlanetGenerator as it is. 
 Events.on(ContentInitEvent, e => {
 
     Vars.content.planet("serpul_clones-s1_r5.67").generator = new SerpuloPlanetGenerator();
