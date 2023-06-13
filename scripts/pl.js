@@ -6,7 +6,7 @@ Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-core_zones").generator = alt_genTile; 
     Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases; //currently does not work. 
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();
-   // Vars.content.planet("serpul_clones-serpulv").generator = unlock_all_sectors_all_low; //that works. 
+    Vars.content.planet("serpul_clones-serpulv").generator = new SerpuloPlanetGenerator(). 
 });
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
@@ -98,7 +98,7 @@ function get_ars(a,b)
         else if(d== 1){return Blocks.water;}
         else if(d== 2){return Blocks.sandWater;}
         else if(d== 3){return Blocks.sand;}
-        else if(d== 4){return Blocks.sand;}
+        else if(d== 4){return Blocks.tar;}
         else if(d== 5){return Blocks.coreZone;}
         else if(d== 6){return Blocks.moss;}
         else if(d== 7){return Blocks.iceSnow;}
@@ -110,37 +110,74 @@ function get_ars(a,b)
     }
     else if(c == 6)
     {
-        if(d==0){return Blocks.deepwater;}
+        if(d==0){return Blocks.water;}
         else if(d== 1){return Blocks.sandWater;}
         else if(d== 2){return Blocks.sand;}
         else if(d== 4){return Blocks.moss;}
-        else if(d== 5){return Blocks.moss;}
+        else if(d== 5){return Blocks.tar;}
+        else if(d== 6){return Blocks.snow;}
+        else if(d== 7){return Blocks.basalt;}
+        else if(d== 8){return Blocks.hotrock;}
+        else if(d== 9){return Blocks.basalt;}
         else if(d==10){return Blocks.ice;}
         else if(d==11){return Blocks.snow;}
         else if(d==12){return Blocks.ice;}
     }
     else if(c == 7){
         if(d==0){return Blocks.deepTaintedWater;}
-        else if(d==1){return Blocks.darksandTaintedWater;}
-        else if(d==2){return Blocks.darksand;}
+        else if(d== 1){return Blocks.darksandTaintedWater;}
+        else if(d== 2){return Blocks.darksand;}
         
+        else if(d== 4){return Blocks.basalt;}
+        else if(d== 5){return Blocks.moss;}
+        else if(d== 6){return Blocks.basalt;}
+        else if(d== 7){return Blocks.hotrock;}
+        else if(d== 8){return Blocks.basalt;}
+        else if(d==10){return Blocks.ice;}
+        else if(d==11){return Blocks.snow;}
+        else if(d==12){return Blocks.ice;}
     }
     else if(c == 8){
         if(d==0){return Blocks.darkSandWater;}
         else if(d==1){return Block.darksand;}
+        
+        else if(d== 3){return Block.tar;}
+        else if(d== 4){return Block.moss;}
+        else if(d== 5){return Block.sporeMoss;}
+        else if(d== 6){return Blocks.snow;}
+        else if(d== 7){return Blocks.basalt;}
+        else if(d== 8){return Blocks.basalt;}
+        else if(d==10){return Blocks.ice;}
+        else if(d==11){return Blocks.snow;}
+        else if(d==12){return Blocks.ice;}
     }
     else if(c == 9){
         if(d==0){return Blocks.darkSandWater;}
-        else if(d==1){return Block.darksand;}
+        else if(d== 1){return Block.darksand;}
+        else if(d== 2){return Block.sporeMoss;}
+        
+        else if(d==10){return Blocks.ice;}
+        else if(d==11){return Blocks.ice;}
+        else if(d==12){return Blocks.ice;}
     }
     else if(c ==10){
         if(d==0){return Blocks.deepTaintedWater;}
+        else if(d==10){return Blocks.ice;}
+        else if(d==11){return Blocks.ice;}
+        else if(d==12){return Blocks.ice;}
     }
     else if(c ==11){
         if(d==0){return Blocks.taintedWater;}
+        else if(d==10){return Blocks.ice;}
+        else if(d==11){return Blocks.ice;}
+        else if(d==12){return Blocks.ice;}
     }
     else if(c ==12){
         if(d==0){return Blocks.darkSandWater;}
+        else if(d== 1){return Block.darksand;}
+        else if(d==10){return Blocks.ice;}
+        else if(d==11){return Blocks.ice;}
+        else if(d==12){return Blocks.ice;}
     }
     return Blocks.coreZone; 
 }
@@ -194,8 +231,8 @@ var ars_04 = [Blocks.deepwater, Blocks.water, Blocks.sandWater, Blocks.sand, Blo
 var ars_05 = [Blocks.deepwater, Blocks.water, Blocks.sandWater, Blocks.sand, Blocks.sand,   Blocks.coreZone, Blocks.moss, Blocks.iceSnow, Blocks.snow,  Blocks.snow, Blocks.ice, Blocks.snow, Blocks.ice];
 var ars_06 = [Blocks.deepwater, Blocks.sandWater, Blocks.sand, Blocks.coreZone, Blocks.moss, Blocks.moss, Blocks.snow, Blocks.basalt, Blocks.hotrock, Blocks.basalt, Blocks.ice, Blocks.snow, Blocks.ice];
 var ars_07 = [Blocks.deepTaintedWater, Blocks.darksandTaintedWater, Blocks.darksand, Blocks.coreZone, Blocks.basalt,    Blocks.moss, Blocks.basalt, Blocks.hotrock, Blocks.basalt,      Blocks.ice, Blocks.snow, Blocks.ice, Blocks.ice];
-var ars_08 = [Blocks.darksandWater, Blocks.darksand, Blocks.coreZone, Blocks.tar, Blocks.moss, Blocks.sporeMoss, Blocks.snow, Blocks.basalt, Blocks.basalt, Blocks.ice, Blocks.snow, Blocks.ice, Blocks.ice];
-var ars_09 = [Blocks.darksandWater, Blocks.darksand, Blocks.coreZone, Blocks.sporeMoss, Blocks.ice, Blocks.ice, Blocks.snow, Blocks.snow, Blocks.snow, Blocks.snow, Blocks.ice, Blocks.ice, Blocks.ice];
+var ars_08 = [Blocks.darksandWater, Blocks.darksand, Blocks.coreZone, Blocks.tar, Blocks.moss,      Blocks.sporeMoss, Blocks.snow, Blocks.basalt, Blocks.basalt,    Blocks.ice, Blocks.snow, Blocks.ice, Blocks.ice];
+var ars_09 = [Blocks.darksandWater, Blocks.darksand, Blocks.coreZone, Blocks.sporeMoss, Blocks.ice, Blocks.ice, Blocks.snow, Blocks.snow, Blocks.snow,              Blocks.snow, Blocks.ice, Blocks.ice, Blocks.ice];
 var ars_10 = [Blocks.deepTaintedWater, Blocks.darksandTaintedWater, Blocks.darksand, Blocks.coreZone, Blocks.sporeMoss, Blocks.ice, Blocks.ice, Blocks.snow, Blocks.snow, Blocks.ice, Blocks.ice, Blocks.ice, Blocks.ice];
 var ars_11 = [Blocks.taintedWater, Blocks.darksandTaintedWater, Blocks.darksand, Blocks.sporeMoss, Blocks.moss, Blocks.sporeMoss, Blocks.iceSnow, Blocks.coreZone, Blocks.ice, Blocks.ice, Blocks.ice, Blocks.ice, Blocks.ice];
 var ars_12 = [Blocks.darksandWater, Blocks.darksand, Blocks.snow, Blocks.tar, Blocks.coreZone, Blocks.snow, Blocks.snow, Blocks.snow, Blocks.ice, Blocks.ice, Blocks.ice, Blocks.ice, Blocks.ice];
