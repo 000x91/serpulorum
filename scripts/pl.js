@@ -50,6 +50,12 @@ function get_ars(a,b)
         if(d==0){return Blocks.water;}
         else if(d == 1){return Blocks.darksandWater;}
         else if(d == 2){return Blocks.darksand;}
+        else if(d == 4){return Blocks.salt;}
+        else if(d == 5){return Blocks.sand;}
+        else if(d == 6){return Blocks.tar;}
+        else if(d == 7){return Blocks.sand;}
+        else if(d == 8){return Blocks.sand;}
+        else if(d == 9){return Blocks.coreZone;}
         else if(d ==10){return Blocks.stone;}
         else if(d ==11){return Blocks.hotrock;}
         else if(d ==12){return Blocks.stone;}
@@ -60,13 +66,31 @@ function get_ars(a,b)
         else if(d == 1){return Blocks.sandWater;}
         else if(d == 2){return Blocks.sand;}
         else if(d == 3){return Blocks.salt;}
+        else if(d == 4){return Blocks.coreZone;}
+        else if(d == 5){return Blocks.salt;}
+        else if(d == 6){return Blocks.stone;}
+        else if(d == 7){return Blocks.hotrock;}
+        else if(d == 8){return Blocks.stone;}
+        else if(d == 9){return Blocks.stone;}
+        else if(d ==10){return Blocks.snow;}
+        else if(d ==11){return Blocks.iceSnow;}
+        else if(d ==11){return Blocks.ice;}
     }
     else if(c == 4)
     {
         if(d==0){return Blocks.deepwater;}
         else if(d== 1){return Blocks.water;}
         else if(d== 2){return Blocks.sandWater;}
-        else if(d== 2){return Blocks.sand;}
+        else if(d== 3){return Blocks.sand;}
+        else if(d== 4){return Blocks.salt;}
+        else if(d== 5){return Blocks.coreZone;}
+        else if(d== 6){return Blocks.hotrock;}
+        else if(d== 7){return Blocks.basalt;}
+        else if(d== 8){return Blocks.snow;}
+        else if(d== 9){return Blocks.snow;}
+        else if(d==10){return Blocks.snow;}
+        else if(d==11){return Blocks.iceSnow;}
+        else if(d==12){return Blocks.ice;}
     }
     else if(c == 5)
     {
@@ -74,6 +98,10 @@ function get_ars(a,b)
         else if(d== 1){return Blocks.water;}
         else if(d== 2){return Blocks.sandWater;}
         else if(d== 3){return Blocks.sand;}
+        else if(d== 4){return Blocks.sand;}
+        else if(d== 5){return Blocks.coreZone;}
+        else if(d== 6)[return Blocks.moss;}
+    
     }
     else if(c == 6)
     {
@@ -124,7 +152,7 @@ function get_block(po) //function 1b
 function rawhyt(po) //function 1c
 {
     var pos = Tmp.v33.set(po).scl(5); 
-    return (Mathf.pow(Simplex.noise3d(1, 7, 0.5, 0.33, pos.x, pos.y, pos.z), 2.3) + 0.07) / 1.07;
+    return Mathf.pow(Simplex.noise3d(1, 7, 0.5, 0.33, pos.x, pos.y, pos.z), 2.3);
 }
 
 var all_enemy_bases = extend(SerpuloPlanetGenerator,{generateSector(sect){sect.generateEnemyBase=true;}});
