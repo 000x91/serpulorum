@@ -7,6 +7,7 @@ Events.on(ContentInitEvent, e => {
 });
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
+/*
 function get_block(po)
 {
     var hyt = gethyt(po);Tmp.v31.set(po);
@@ -20,6 +21,7 @@ function get_block(po)
     var res = ars[Mathf.clamp(temp * ars.length), 0, ars[0].length - 1)][Mathf.clamp(height * ars[0].length), 0, ars[0].length - 1)];
     return res; 
 }
+*/
 function rawhyt(po)
 {
     var pos = Tmp.v33.set(po).scl(5); 
