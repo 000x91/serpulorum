@@ -26,9 +26,9 @@ function get_ars(a,b)
         else if(d == 7){return Blocks.magmarock;}
         else if(d == 8){return Blocks.hotrock;}
         else if(d == 9){return Blocks.stone;}
-        else if(d == 10){return Blocks.tar;}
-        else if(d == 11){return Blocks.stone;}
-        else if(d == 12){return Blocks.darksandTaintedWater;}
+        else if(d ==10){return Blocks.tar;}
+        else if(d ==11){return Blocks.stone;}
+        else if(d ==12){return Blocks.darksandTaintedWater;}
     }
     else if(c==1){
         if(d==0){return Blocks.water;}
@@ -40,12 +40,19 @@ function get_ars(a,b)
         else if(d == 6){return Blocks.tar;}
         else if(d == 7){return Blocks.sand;}
         else if(d == 8){return Blocks.sand;}
+        else if(d == 9){return Blocks.coreZone;}
+        else if(d ==10){return Blocks.stone;}
+        else if(d ==11){return Blocks.hotrock;}
+        else if(d ==12){return Blocks.stone;}
     }
     else if(c==2)
     {
         if(d==0){return Blocks.water;}
         else if(d == 1){return Blocks.darksandWater;}
         else if(d == 2){return Blocks.darksand;}
+        else if(d ==10){return Blocks.stone;}
+        else if(d ==11){return Blocks.hotrock;}
+        else if(d ==12){return Blocks.stone;}
     }
     else if(c == 3)
     {
@@ -77,7 +84,7 @@ function get_ars(a,b)
     else if(c == 7){
         if(d==0){return Blocks.deepTaintedWater;}
         else if(d==1){return Blocks.darksandTaintedWater;}
-        else if(d==2){return Blocsk.darksand;}
+        else if(d==2){return Blocks.darksand;}
         
     }
     else if(c == 8){
