@@ -154,27 +154,54 @@ function get_ars(a,b)
     else if(c == 9){
         if(d==0){return Blocks.darkSandWater;}
         else if(d== 1){return Block.darksand;}
-        else if(d== 2){return Block.sporeMoss;}
         
+        else if(d== 3){return Blocks.sporeMoss;}
+        else if(d== 4){return Blocks.ice;}
+        else if(d== 5){return Blocks.ice;}
+        else if(d== 6){return Blocks.snow;}
+        else if(d== 7){return Blocks.coreTile;}
+        else if(d== 8){return Blocks.snow;}
+        else if(d== 9){return Blocks.snow;}
         else if(d==10){return Blocks.ice;}
         else if(d==11){return Blocks.ice;}
         else if(d==12){return Blocks.ice;}
     }
     else if(c ==10){
         if(d==0){return Blocks.deepTaintedWater;}
+        else if(d== 1){return Blocks.darksandTaintedWater;}
+        else if(d== 2){return Blocks.darksand;}
+        else if(d== 3){return Blocks.tar;}
+        else if(d== 4){return Blocks.sporeMoss;}
+        else if(d== 5){return Blocks.sporeMoss;}
+        else if(d== 6){return Blocks.ice;}
+        else if(d== 7){return Blocks.snow;}
+        else if(d== 8){return Blocks.snow;}
         else if(d==10){return Blocks.ice;}
         else if(d==11){return Blocks.ice;}
         else if(d==12){return Blocks.ice;}
     }
     else if(c ==11){
         if(d==0){return Blocks.taintedWater;}
+        else if(d== 1){return Blocks.darksandTaintedWater;}
+        else if(d== 2){return Blocks.darksand;}
+        else if(d== 3){return Blocks.sporeMoss;}
+        else if(d== 4){return Blocks.moss;}
+        else if(d== 5){return Blocks.sporeMoss;}
+        else if(d== 6){return Blocks.ice;}
+        else if(d== 7){return Blocks.iceSnow;}
+        else if(d== 8){return Blocks.snow;}
         else if(d==10){return Blocks.ice;}
         else if(d==11){return Blocks.ice;}
         else if(d==12){return Blocks.ice;}
     }
     else if(c ==12){
         if(d==0){return Blocks.darkSandWater;}
-        else if(d== 1){return Block.darksand;}
+        else if(d== 1){return Blocks.darksand;}
+        else if(d== 2){return Blocks.snow;}
+        else if(d== 3){return Blocks.tar;}
+        else if(d== 4){return Blocks.snow;}
+        else if(d== 5){return Blocks.iceSnow;}
+        else if(d== 6){return Blocks.ice;}
         else if(d==10){return Blocks.ice;}
         else if(d==11){return Blocks.ice;}
         else if(d==12){return Blocks.ice;}
