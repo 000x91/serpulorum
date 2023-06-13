@@ -161,7 +161,7 @@ function get_ars(a,b)
         else if(d== 4){return Blocks.ice;}
         else if(d== 5){return Blocks.ice;}
         else if(d== 6){return Blocks.snow;}
-        else if(d== 7){return Blocks.coreTile;}
+        else if(d== 7){return Blocks.coreZone;}
         else if(d== 8){return Blocks.snow;}
         else if(d== 9){return Blocks.snow;}
         else if(d==10){return Blocks.ice;}
