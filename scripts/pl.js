@@ -20,9 +20,9 @@ function get_block(po) //function 1b
     var tem = Mathf.clamp(Math.abs(pos.y * 2) / (rad));
     var tnoise = Simplex.noise3d(1, 7, 0.56, 0.33, pos.x, pos.y + 999, pos.z);
     var temp = Mathf.lerp(tem, tnoise, 0.5);
-    hyt = hyt * 1.2; hyt = Math.clamp(hyt);
+    hyt = hyt * 1.2; var hyu = Math.clamp(hyt);
     //var tar = Simplex.noise3d(1, 4, 0.55, 0.5, pos.x, pos.y + 999, pos.z) * 0.3 + Tmp.v31.dst(0, 0, 1) * 0.2;
-    var res = ars[Mathf.clamp(temp * ars.length, 0, ars[0].length - 1)][Mathf.clamp(hyt * ars[0].length, 0, ars[0].length - 1)];
+    var res = ars[Mathf.clamp(temp * ars.length, 0, ars[0].length - 1)][Mathf.clamp(hyu * ars[0].length, 0, ars[0].length - 1)];
     return res; 
 }
 
