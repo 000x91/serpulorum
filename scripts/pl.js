@@ -29,7 +29,7 @@ function get_block(po) //function 1b
 function rawhyt(po) //function 1c
 {
     var pos = Tmp.v33.set(po).scl(5); 
-    return (Mathf.pow(Simplex.noise3d(seed, 7, 0.5, 0.33, pos.x, pos.y, pos.z), 2.3) + 0.07) / 1.07;
+    return (Mathf.pow(Simplex.noise3d(1, 7, 0.5, 0.33, pos.x, pos.y, pos.z), 2.3) + 0.07) / 1.07;
 }
 
 var all_enemy_bases = extend(SerpuloPlanetGenerator,{generateSector(sect){sect.generateEnemyBase=true;}});
