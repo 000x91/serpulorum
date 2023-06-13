@@ -22,7 +22,7 @@ function get_block(po) //function 1b
     var temp = Mathf.lerp(tem, tnoise, 0.5);
     hyt = hyt * 1.2; var hyu = Mathf.clamp(hyt);
     //var tar = Simplex.noise3d(1, 4, 0.55, 0.5, pos.x, pos.y + 999, pos.z) * 0.3 + Tmp.v31.dst(0, 0, 1) * 0.2;
-    var res = ars[Mathf.clamp(temp * ars.length, 0, ars[0].length - 1)][4];//[Mathf.clamp(hyu * ars[0].length, 0, ars[0].length - 1)];
+    var res = ars[Mathf.clamp(temp * ars.length, 0, ars[0].length - 1)][Math.floor(Mathf.clamp(hyu * ars[0].length, 0, ars[0].length - 1))];
     return res; 
 }
 
