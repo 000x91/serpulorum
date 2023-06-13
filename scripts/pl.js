@@ -1,6 +1,7 @@
 // Change the planet generator
 // Using ErekirPlanetGenerator prevents people to generate random sectors. No that actually fails to do so. just that the planet has no enemies but may be in future. 
 // Attempt to use altered SerpuloPlanetGenerator. 
+// Please be warned that some short cut operations will canccel all your javascripts. For example hyt *=1.2;
 Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases; //currently does not work. 
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();
