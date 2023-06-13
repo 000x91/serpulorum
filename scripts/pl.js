@@ -13,12 +13,14 @@ Events.on(ContentInitEvent, e => {
 });
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
+/*
 function gb(p)
 {
     var heig = (Mathf.pow(Simplex.noise3d(seed, 7, 0.5f, 1f/3f, p.x, p.y, p.z), 2.3f) + 0.07) / 1.07;
     Tmp.v31.set(position);
     
 }
+*/
 var all_enemy_bases = extend(SerpuloPlanetGenerator,{generateSector(sect){sect.generateEnemyBase=true}});
 var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(){}});
 //var genLakes_true = extend(SerpuloPlanetGenerator,{{genLakes = true}}); // causes js to stop working altogether. 
