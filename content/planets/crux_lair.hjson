@@ -38,7 +38,7 @@ hasAtmosphere: true
 hiddenItems:[]
 iconColor: 098241
 launchCandidates: []
-localizedName:"tst_ct"
+localizedName:"crux lair (wip)"
 
 mesh: {
   type: NoiseMesh
