@@ -10,7 +10,7 @@ function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; r
 
 function get_block(po)
 {
-    //var hyt = gethyt(po);
+    var hyt = gethyt(po);
     //Tmp.v31.set(po);
     //var pos = Tmp.v33.set(pos).scl(5);
     //var rad = 5; //var tars; 
