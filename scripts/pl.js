@@ -8,7 +8,7 @@ Events.on(ContentInitEvent, e => {
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
 var all_enemy_bases = extend(SerpuloPlanetGenerator,{generateSector(sect){sect.generateEnemyBase=true;}});
-//var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(){}});
+var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(po,ti){}});
 //var genLakes_true = extend(SerpuloPlanetGenerator,{{genLakes = true}}); // causes js to stop working altogether. 
 var def_waterOffset = 0.07; 
 var unlock_all_sectors_all_low = extend(SerpuloPlanetGenerator,{allowLanding(s){return true}}); //unlock all sectors and turn all low.
