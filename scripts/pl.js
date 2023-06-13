@@ -12,6 +12,7 @@ Events.on(ContentInitEvent, e => {
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
 function get_ars(a,b)
 {
+    /*
     var c = Math.floor(a); var d = Math.floor(b); 
     if(c < 0 || d < 0){return Blocks.coreZone;}
     else if(c >11 || d > 11){return Blocks.coreZone;}
@@ -151,7 +152,7 @@ function get_ars(a,b)
         else if(d==11){return Blocks.snow;}
         else if(d==12){return Blocks.ice;}
     }
-    /*
+    
     else if(c == 9){
         if(d==0){return Blocks.darkSandWater;}
         else if(d== 1){return Block.darksand;}
