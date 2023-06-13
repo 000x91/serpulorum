@@ -1,1 +1,1 @@
-require("pl");
+require("pl"); require("pl_defa");
