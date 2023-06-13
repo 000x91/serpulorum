@@ -6,13 +6,13 @@ Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-core_zones").generator = alt_genTile; 
     Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases; //currently does not work. 
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();
-    Vars.content.planet("serpul_clones-serpulv").generator = new SerpuloPlanetGenerator(). 
+    Vars.content.planet("serpul_clones-serpulv").generator = new SerpuloPlanetGenerator(); //maybe changed later. 
 });
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
 function get_ars(a,b)
 {
-    /*
+    
     var c = Math.floor(a); var d = Math.floor(b); 
     if(c < 0 || d < 0){return Blocks.coreZone;}
     else if(c >11 || d > 11){return Blocks.coreZone;}
@@ -208,7 +208,7 @@ function get_ars(a,b)
         else if(d==11){return Blocks.ice;}
         else if(d==12){return Blocks.ice;}
     }
-    */
+    
     return Blocks.coreZone; 
 }
 function get_block(po) //function 1b
