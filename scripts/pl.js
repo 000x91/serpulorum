@@ -22,7 +22,7 @@ function gb(p)
 }
 */
 var all_enemy_bases = extend(SerpuloPlanetGenerator,{generateSector(sect){sect.generateEnemyBase=true}});
-var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(){}});
+//var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(){}});
 //var genLakes_true = extend(SerpuloPlanetGenerator,{{genLakes = true}}); // causes js to stop working altogether. 
 var def_waterOffset = 0.07; 
 var unlock_all_sectors_all_low = extend(SerpuloPlanetGenerator,{allowLanding(s){return true}}); //unlock all sectors and turn all low.
