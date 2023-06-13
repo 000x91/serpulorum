@@ -139,7 +139,7 @@ function get_ars(a,b)
     }
     else if(c == 8){
         if(d==0){return Blocks.darkSandWater;}
-        else if(d==1){return Block.darksand;}
+        else if(d== 1){return Block.darksand;}
         
         else if(d== 3){return Block.tar;}
         else if(d== 4){return Block.moss;}
@@ -151,6 +151,7 @@ function get_ars(a,b)
         else if(d==11){return Blocks.snow;}
         else if(d==12){return Blocks.ice;}
     }
+    /*
     else if(c == 9){
         if(d==0){return Blocks.darkSandWater;}
         else if(d== 1){return Block.darksand;}
@@ -206,6 +207,7 @@ function get_ars(a,b)
         else if(d==11){return Blocks.ice;}
         else if(d==12){return Blocks.ice;}
     }
+    */
     return Blocks.coreZone; 
 }
 function get_block(po) //function 1b
