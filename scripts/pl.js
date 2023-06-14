@@ -154,7 +154,7 @@ function get_ars(a,b)
     }
     
     else if(c == 9){
-        if(d==0){return Blocks.darkSandWater;}
+        if(d==0){return Blocks.darksandWater;}
         else if(d== 1){return Blocks.darksand;}
         
         else if(d== 3){return Blocks.sporeMoss;}
