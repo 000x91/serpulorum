@@ -3,12 +3,12 @@
 // Attempt to use altered SerpuloPlanetGenerator. 
 // Please be warned that some short cut operations will canccel all your javascripts. For example hyt *=1.2;
 Events.on(ContentInitEvent, e => {
-    Vars.content.planet("serpul_clones-core_zones").generator = alt_genTile; 
-    Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases; //currently does not work. 
-    Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();
+    Vars.content.planet("serpul_clones-core_zones").generator = new SerpuloPlanetGenerator(); 
+    Vars.content.planet("serpul_clones-crux_lair").generator = new SerpuloPlanetGenerator(); //currently does not work. 
+    Vars.content.planet("serpul_clones-serpulu").generator = new SerpuloPlanetGenerator();//altered_spg_alt();
     Vars.content.planet("serpul_clones-serpulv").generator = new SerpuloPlanetGenerator(); //maybe changed later. 
 });
-
+/*
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
 function get_ars(a,b)
 {
@@ -243,5 +243,6 @@ var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(po,ti) //function 1a
 //default private offset values. 
 var def_waterOffset = 0.07; var def_scl = 5;
 
-// 
+*/ 
 var unlock_all_sectors_all_low = extend(SerpuloPlanetGenerator,{allowLanding(s){return true}}); //unlock all sectors and turn all low.
+
