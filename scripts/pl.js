@@ -3,7 +3,7 @@
 // Attempt to use altered SerpuloPlanetGenerator. 
 // Please be warned that some short cut operations will canccel all your javascripts. For example hyt *=1.2;
 Events.on(ContentInitEvent, e => {
-    Vars.content.planet("serpul_clones-core_zones").generator = new SerpuloPlanetGenerator(); 
+    Vars.content.planet("serpul_clones-core_zones").generator = alt_genTile; 
     Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases;//currently does not work. 
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();//altered_spg_alt();
     Vars.content.planet("serpul_clones-serpulv").generator = unlock_all_sectors_all_low; //maybe changed later. 
