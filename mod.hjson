@@ -1,10 +1,12 @@
 author: Chin Hon Nang
 displayName: serpul_clones
 dependencies:[]
+
 description: "
-No techs provided. generator changed to SerpuloPlanetGenerator via javaScript.
-/nThanks zerg for the source code.
-/n "  
+No techs and no missions.  
+generator changed to SerpuloPlanetGenerator via javaScript.
+Thanks zerg for the source code.
+"
 hidden:false
 name: serpul_clones
 minGameVersion: 140
