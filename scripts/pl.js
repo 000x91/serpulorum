@@ -10,7 +10,7 @@ Events.on(ContentInitEvent, e => {
 });
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
-/*
+
 function get_ars(a,b)
 {
     
@@ -232,7 +232,7 @@ function rawhyt(po) //function 1c
     var pos = Tmp.v33.set(po).scl(5); 
     return Mathf.pow(Simplex.noise3d(1, 7, 0.5, 0.33, pos.x, pos.y, pos.z), 2.3);
 }
-*/
+
 var all_enemy_bases = extend(SerpuloPlanetGenerator,{generateSector(sect){sect.generateEnemyBase=true;}});
 var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(po,ti) //function 1a
 {
