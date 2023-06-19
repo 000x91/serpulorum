@@ -6,6 +6,12 @@ description: "
 No techs and no missions. Planets only.  
 generator changed to SerpuloPlanetGenerator via javaScript.
 Thanks zerg for the source code.
+
+last work done: 19 june 2023
+task: fixing bugs when running Mindustry v145 
+
+Feel free to reverse-engineer. 
+Click on Repo > scripts > pl.js for inner workings/ 
 "
 hidden:false
 name: serpul_clones
