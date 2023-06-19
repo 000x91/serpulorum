@@ -3,7 +3,7 @@ displayName: serpul_clones
 dependencies:[]
 
 description: "
-No techs and no missions.  
+No techs and no missions. Planets only.  
 generator changed to SerpuloPlanetGenerator via javaScript.
 Thanks zerg for the source code.
 "
