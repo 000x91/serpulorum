@@ -1,7 +1,10 @@
 author: Chin Hon Nang
 displayName: serpul_clones
 dependencies:[]
-description: "No techs provided. generator changed to SerpuloPlanetGenerator via javaScript.\n\n current work: overriding SerpuloPlanetGenerator functions.Thanks zerg for the source code.\n\n Not working in v145 or later. "  
+description: "
+No techs provided. generator changed to SerpuloPlanetGenerator via javaScript.
+/nThanks zerg for the source code.
+/n "  
 hidden:false
 name: serpul_clones
 minGameVersion: 140
