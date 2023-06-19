@@ -6,10 +6,15 @@ description
 
 A project to test if I can alter the generator for this planet via java scrips. Planet generator are altered by javascript. 
 
+=============================================
+
 credits for source codes 
+
 -Frozen Farlands https://github.com/ZielonyTrojkat/Frozen-Farlands for sucessfully changing the planetGenerator.
+
 -Zerg https://github.com/430230562/zerg for code extension and overriding the stuffs. 
 
+=============================================
 conclusion:
 1. Increase planet size increases the map sixe. 
 2. public functions can be overrided. 
