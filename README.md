@@ -2,8 +2,8 @@ About this Mindustry mod
 - No techs and no missions provided.
 - several planets are to use SerpuloPlanetGenerator altered by javaScript in different configurations and extensions(overrides).  
 
-A project to test if I can alter the generator for this planet via java scrips  
-planet generator are altered by javascript. 
+description
+A project to test if I can alter the generator for this planet via java scrips. Planet generator are altered by javascript. 
 
 credits for source codes 
 -Frozen Farlands https://github.com/ZielonyTrojkat/Frozen-Farlands for sucessfully changing the planetGenerator.
