@@ -4,7 +4,7 @@
 // Please be warned that some short cut operations will canccel all your javascripts. For example hyt *=1.2;
 Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-core_zones").generator = new SerpuloPlanetGenerator(); 
-    Vars.content.planet("serpul_clones-crux_lair").generator = new SerpuloPlanetGenerator(); //currently does not work. 
+    Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases;//currently does not work. 
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();//altered_spg_alt();
     Vars.content.planet("serpul_clones-serpulv").generator = unlock_all_sectors_all_low; //maybe changed later. 
 });
@@ -13,7 +13,6 @@ function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; r
 
 function get_ars(a,b)
 {
-    
     var c = Math.floor(a); var d = Math.floor(b); 
     if(c < 0 || d < 0){return Blocks.coreZone;}
     else if(c >11 || d > 11){return Blocks.coreZone;}
