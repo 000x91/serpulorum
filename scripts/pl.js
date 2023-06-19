@@ -5,11 +5,12 @@
 Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-core_zones").generator = new SerpuloPlanetGenerator(); 
     Vars.content.planet("serpul_clones-crux_lair").generator = new SerpuloPlanetGenerator(); //currently does not work. 
-    Vars.content.planet("serpul_clones-serpulu").generator = new SerpuloPlanetGenerator();//altered_spg_alt();
+    Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();//altered_spg_alt();
     Vars.content.planet("serpul_clones-serpulv").generator = new SerpuloPlanetGenerator(); //maybe changed later. 
 });
-/*
+
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
+/*
 function get_ars(a,b)
 {
     
