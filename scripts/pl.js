@@ -7,7 +7,7 @@ Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases;//currently does not work. 
     Vars.content.planet("serpul_clones-highdiff").generator = all_enemy_bases; 
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();//altered_spg_alt();
-    Vars.content.planet("serpul_clones-serpulv").generator = unlock_all_sectors_all_low; //maybe changed later. 
+    Vars.content.planet("serpul_clones-serpulv").generator = all_enemy_bases; //maybe changed later. 
 });
 
 function altered_spg_alt(){var a = new SerpuloPlanetGenerator(); a.alt = true; return a;}
