@@ -5,6 +5,7 @@
 Events.on(ContentInitEvent, e => {
     Vars.content.planet("serpul_clones-core_zones").generator = alt_genTile; 
     Vars.content.planet("serpul_clones-crux_lair").generator = all_enemy_bases;//currently does not work. 
+    Vars.content.planet("serpul_clones-highdiff").generator = hidiff; 
     Vars.content.planet("serpul_clones-serpulu").generator = altered_spg_alt();//altered_spg_alt();
     Vars.content.planet("serpul_clones-serpulv").generator = unlock_all_sectors_all_low; //maybe changed later. 
 });
@@ -242,5 +243,13 @@ var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(po,ti) //function 1a
 
 //default private offset values. 
 var def_waterOffset = 0.07; var def_scl = 5; 
+var hidiff = extend(SepruloPlanetGenerator,
+{
+    generateSector(sect)
+    {
+        sect.captureWave = 100 + Math.floor(Math.random() * 100);
+        sect.difficulty = 9; 
+    }
+});
 var unlock_all_sectors_all_low = extend(SerpuloPlanetGenerator,{allowLanding(s){return true}}); //unlock all sectors and turn all low.
 
