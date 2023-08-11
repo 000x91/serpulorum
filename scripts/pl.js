@@ -245,7 +245,7 @@ var alt_genTile = extend(SerpuloPlanetGenerator,{genTile(po,ti) //function 1a
 var def_waterOffset = 0.07; var def_scl = 5; 
 var hidiff = extend(SepruloPlanetGenerator,
 {
-    generateSector(sect){sect.threat = 9;}
+    generateSector(sect){sect.threat = 9999;}
 });
 var unlock_all_sectors_all_low = extend(SerpuloPlanetGenerator,{allowLanding(s){return true}}); //unlock all sectors and turn all low.
 
