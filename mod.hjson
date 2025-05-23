@@ -1,11 +1,11 @@
-author:"chinhonnang0000"
-displayName: serpul_clones
+author: "000x91"
+displayName: serpulorum
 dependencies:[]
 
 description: "
-No techs and no missions. Planets only.  
+No techs and no missions. Planets only. 
 generator changed to SerpuloPlanetGenerator via javaScript.
-Thanks zerg for the source code.
+This is based on serpul_clones chinhonnang0000
 
 last work done: 19 june 2023
 task: fixing bugs when running Mindustry v145 
@@ -13,7 +13,8 @@ task: fixing bugs when running Mindustry v145
 Feel free to reverse-engineer. 
 Click on Repo > scripts > pl.js for inner workings/ 
 "
-hidden:false
-name: serpul_clones
+
+hidden:true
+name: serpulorum
 minGameVersion: 140
-version: build 0
+version: build 1
